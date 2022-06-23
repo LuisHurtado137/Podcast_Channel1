@@ -391,9 +391,19 @@ figcaption {
 
   .informationContainer {
     height: 850px;
+    padding: 10px;
+    text-align: center;
   }
 
   .svgContainer {
     grid-template-columns: repeat(1, 1fr);
+  }
+
+  .background {
+    text-align: center;
+  }
+
+  .footer {
+    flex-direction: column;
   }
 }
