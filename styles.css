@@ -1,122 +1,362 @@
-  @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@100&display=swap');
-  @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@100;500&display=swap');
-  
-  * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@100&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@100;500&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "IBM Plex Sans", sans-serif;
+  overflow-x: hidden;
+  color: #060a24;
+}
+
+.title-text {
+  font-size: 60px;
+}
+
+.subtitle-text {
+  font-size: 36px;
+  letter-spacing: 0;
+  font-weight: bold;
+}
+
+.paragraph-text {
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 16px;
+  letter-spacing: 0;
+}
+
+.btn-style {
+  font-family: "IBMPlexMono-Medium", monospace;
+  font-size: 18px;
+  letter-spacing: 0;
+  text-align: center;
+  line-height: 24px;
+}
+
+.logo {
+  float: left;
+  display: block;
+  font-size: 2em;
+  padding: 10px 20px;
+}
+
+.header {
+  width: 100%;
+  height: 50px;
+}
+
+.header ul {
+  list-style: none;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  padding: 10px;
+}
+
+.header ul a {
+  color: #000000;
+  text-decoration: none;
+  text-align: center;
+  text-decoration: none;
+  font-size: 20px;
+  padding: 20px;
+}
+
+.header ul a:hover {
+  text-decoration: line-through;
+  color: #00f3bb;
+}
+
+.header .menu-icon {
+  display: none;
+}
+
+.menu-icon {
+  padding: 20px 20px;
+  position: relative;
+  float: right;
+  cursor: pointer;
+}
+
+.nav-icon {
+  background: black;
+  display: block;
+  height: 2px;
+  width: 18px;
+  position: relative;
+  transition: background 0.2s ease-out;
+}
+
+.nav-icon:before {
+  background: black;
+  content: "";
+  display: block;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  transition: all 0.2s ease-out;
+  top: 5px;
+}
+
+.nav-icon:after {
+  background: black;
+  content: "";
+  display: block;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  transition: all 0.2s ease-out;
+  top: -5px;
+}
+.menu-button {
+  display: none;
+}
+
+.homeContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 300px;
+  margin: 20px;
+}
+
+.homeContainer p {
+  width: 50%;
+}
+
+.title-text span {
+  text-decoration: line-through;
+}
+
+.button {
+  width: 345px;
+  height: 56px;
+  background-color: #00f3bb;
+  font-weight: bold;
+  border: none;
+}
+
+.button:hover {
+  background-image: linear-gradient(to left, #0000fe, #00f0b8);
+  color: white;
+}
+
+.spotify-episodes {
+  height: 1000px;
+  background-image: linear-gradient(to right, #0000a3, #0000ff);
+  clip-path: polygon(100% 5%, 100% 95%, 0% 100%, 0% 10%);
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: column;
+}
+
+.spotify-episodes h2 {
+  color: white;
+}
+
+.iframe-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 20px;
+  place-items: center;
+}
+
+.iframe-container iframe {
+  width: 450px;
+  height: 280px;
+}
+
+.aboutContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.aboutText {
+  width: 30%;
+  padding: 15px;
+}
+
+.phone-image {
+  width: 450px;
+  position: relative;
+  top: -115px;
+}
+
+.phone-title {
+  font-weight: 400;
+  font-size: 45px;
+}
+
+.images-title {
+  margin: 20px;
+  width: 80%;
+}
+
+.woman-images {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.woman-images img {
+  width: 100%;
+  height: auto;
+}
+
+.informationContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  height: 500px;
+}
+
+.svgContainer {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 40px;
+}
+
+figure {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+figcaption {
+  font-family: "IBMPlexSans-SemiBold", sans-serif;
+  font-size: 22px;
+  letter-spacing: 0;
+  text-align: center;
+  font-weight: bold;
+}
+
+.background {
+  height: 500px;
+  background-image: linear-gradient(to right, #0000a3, #0000ff);
+  clip-path: polygon(100% 5%, 100% 100%, 0% 100%, 0% 15%);
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: column;
+  color: white;
+}
+
+.footer {
+  height: 90px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+.icons {
+  width: 350px;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.icons a {
+  width: 30px;
+}
+
+.icons a:hover {
+  transition: 0.3s;
+  transform: scale(1.2);
+}
+
+@media only screen and (max-width: 940px) {
+  .iframe-container {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(4, 1fr);
   }
-  body {
-    margin: 0;
-    width: 100vw;
-    background-color: #ffffff;
-    overflow-x: hidden;
+
+  .iframe-container iframe {
+    width: 420px;
   }
-  html {
-    scroll-behavior: smooth;
+
+  .aboutContainer {
+    flex-direction: column;
   }
-  a {
+
+  .woman-images {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .aboutText {
+    width: 60%;
+  }
+
+  .svgContainer {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .spotify-episodes {
+    height: 1800px;
+  }
+
+  .menu a {
     color: white;
-    font-family: "IBM Plex Sans", sans-serif;
-    letter-spacing: 2px;
   }
-  .title-text {
-    font-family: 'IBM Plex Sans', sans-serif;
-    font-size: 64px;
-    color: #060A24;
-    letter-spacing: 0;
-    font-weight: normal;
-  }
-  .subtitle-text {
-    font-family: 'IBM Plex Sans', sans-serif;
-    font-size: 36px;
-    color: #060A24;
-    letter-spacing: 0;
-    font-weight: normal;
-  }
-  .paragraph-text {
-    font-family: 'IBM Plex Mono', monospace;
-    font-size: 16px;
-    color: #060A24;
-    letter-spacing: 0;
-    line-height: 24px;
-  }
-  .btn-style  {
-    font-family: 'IBMPlexMono-Medium', monospace;
-    font-size: 18px;
-    letter-spacing: 0;
-    text-align: center;
-    line-height: 24px;
-  }
-  .header {
-    background-color: #ffffff;
-    width: 100vw;
-  }
-  .header ul {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-    overflow: hidden;
-    background: #0000ec;
-  }
-  .header ul a {
-    display: block;
-    padding: 20px;
-    text-decoration: none;
-  }
-  .header ul a:hover {
-    background-color: #0000bf;
-  } 
-  .logo {
-    float: left;
-    display: block;
-    font-size: 2em;
-    padding: 10px 20px;
-  }
+
   .menu {
     clear: both;
     max-height: 0;
+    overflow: hidden;
     transition: max-height 0.2s ease-out;
   }
+
   .menu-icon {
     padding: 20px 20px;
     position: relative;
     float: right;
     cursor: pointer;
   }
-  .nav-icon {
-    background: black;
+
+  .header .menu-icon {
     display: block;
-    height: 2px;
-    width: 18px;
+    float: right;
+  }
+
+  .header ul {
+    list-style: none;
+    overflow: hidden;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background: #0000ec;
     position: relative;
-    transition: background 0.2s ease-out;
+    padding: 0;
   }
-  .nav-icon:before {
-    background: black;
-    content: "";
+
+  .header ul a {
+    color: #ffffff;
+    text-decoration: none;
+    float: left;
     display: block;
-    height: 100%;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 20px;
     width: 100%;
-    position: absolute;
-    transition: all 0.2s ease-out;
-    top: 5px;
   }
-  .nav-icon:after {
-    background: black;
-    content: "";
-    display: block;
-    height: 100%;
-    width: 100%;
-    position: absolute;
-    transition: all 0.2s ease-out;
-    top: -5px;
-  }
-  .menu-button {
-    display: none;
-  }
+
   .header .menu-button:checked ~ .menu {
-    max-height: 240px;
+    max-height: 300px;
   }
   .header .menu-button:checked ~ .menu-icon .nav-icon {
     background: transparent;
@@ -129,666 +369,31 @@
     transform: rotate(45deg);
     top: 0;
   }
-  .text-container {
-    display: flex;
-    flex-direction: column;
-    margin: 35px;
-    padding: 65px 55px;
-    width: 100vw;
-  }
-  .title-text em {
-    text-decoration: line-through;
-  }
-  .btn-container {
-    position: absolute;
-    left: 90px;
-  }
-  .button {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 345px;
-    height: 56px;
-    background-color: #00f3bb;
-  }
-  .button:hover {
-    background-image: linear-gradient(to left, #0000fe, #00f0b8);
-    color: white;
-  }
-  .button p {
-    font-weight: bold;
-  }
-  .spotify {
-    width: 100vw;
-    height: 1500px;
-    background-image: linear-gradient(to right, #0000a3, #0000ff);
-    clip-path: polygon(100% 5%, 100% 95%, 0% 100%, 0% 10%);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  .iframe {
-    height: 1000px;
-    width: 400px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
-  }
-  .episodios h2 {
-    color: white;
-    position: absolute;
-    top: 820px;
-  }
-  .phone {
-      display: flex;
-      flex-direction: column;
-      justify-content: space-around;
-      width: 100vw;
-      height: auto;
-  }
-  .phone-text {
-    margin-left: 70px;
-    width: 500px;
-    height: 250px;
-  }
-  .images  {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    position: relative;
-    width: 100vw;
-    top: 200px;
-  }
-  .images-title {
-    margin: 30px;
-  }
-  .woman-images {
-    width: 100vw; 
-    height: auto;   
-    line-height: 0px;
-    font-size: 0;
-    flex-wrap: wrap;
-  }
-  .info {
-    position: relative;
-    top: 500px;
-    width: 300px;
-    left: 30%;
-  }
-  .svg {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    position: relative;
-    top: 600px;
-    width: 100vw;
-    height: 1400px;
-  }
-  figure {
-    width: 480px;
-    height: 290px;  
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 40px;
-  }
-  figcaption {
-    font-family: 'IBMPlexSans-SemiBold', sans-serif;
-    font-size: 28px;
-    color: #060A24;
-    letter-spacing: 0;
-    text-align: center;
-    font-weight: bold;
-  }
-  .background {
-    width: 100vw;
-    height: 420px;
-    background-image: linear-gradient(to right, #0000a3, #0000ff);
-    clip-path: polygon(100% 5%, 100% 100%, 0% 100%, 0% 15%);
-    position: relative;
-    top: 350px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-  }
-  .background h2 {
-    color: #FFFFFF;
-    text-align: center;
-    width: 100vw;
-  }
-  .end-button-container {
-    position: absolute;
-  }
-  .end-button {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 345px;
-    height: 56px;
-    background-color: #00f3bb;
-  }
-  .end-button:hover {
-    background-image: linear-gradient(to left, #0000fe, #00f0b8);
-    color: white;
-  }
-  footer {
-    background: #ffffff;
-    position: relative;
-    bottom: -390px;
+}
+
+@media only screen and (max-width: 640px) {
+  .homeContainer p {
     width: 100%;
-    height: 90px;
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    flex-direction: column;  
   }
-  .icons {
-    width: 350px;
-    height: 20px;
-    display: flex;
-    justify-content: space-evenly
-  }
-  .icons a {
-    width: 30px;
-  }
-  .icons a:hover {
-    width: 45px;
-  }
-  
-  @media (min-width: 480px) {
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-    body {
-      width: 100vw
-    }
-    html {
-      scroll-behavior: smooth;
-    }
-    .header {
-      background-color: #ffffff;
-      width: 100vw;
-    }
-    .header li {
-      float: left;
-    }
-    .header li a {
-      padding: 15px 20px;
-      background-color: white;
-      color: #060a24;
-    }
-    .header ul a:hover {
-      background: white;
-      color: #00f3bb;
-      text-decoration: line-through;
-    }
-    .header ul a:active {
-      color: #060a2469;
-    }
-    .header .menu {
-      clear: none;
-      float: right;
-      max-height: none;
-    }
-    .header .menu-icon {
-      display: none;
-    }
-    .title-text {
-      font-family: 'IBM Plex Sans', sans-serif;
-      font-size: 48px;
-      color: #060A24;
-      letter-spacing: 0;
-      font-weight: lighter;
 
-    }
-    .subtitle-text {
-      font-family: "IBM Plex Sans", sans-serif;
-      font-size: 36px;
-      color: #060A24;
-      letter-spacing: 0;
-    }
-    .paragraph-text  {
-      font-family: 'IBM Plex Mono', monospace;
-      font-size: 16px;
-      color: #060A24;
-      letter-spacing: 0;
-      line-height: 24px;
-    }
-    .text-container {
-      display: flex;
-      flex-direction: column;
-      margin: 35px;
-      padding: 65px 55px;
-      width: 900px;
-    }
-    .btn-style p {
-      font-family: 'IBMPlexMono-Medium', monospace;
-      font-size: 18px;
-      letter-spacing: 0;
-      text-align: center;
-      line-height: 24px;
-    }
-    .button {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      width: 226px;
-      height: 56px;
-      background-color: #00f3bb;
-    }
-    .spotify {
-      width: 100vw;
-      height: 1392px;
-      background-image: linear-gradient(to right, #0000a3, #0000ff);
-      clip-path: polygon(100% 0%, 100% 85%, 0% 100%, 0% 15%);
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
-    .episodios h2 {
-      top: 650px;
-    }
-    .iframe {
-      height: 660px;
-      width: 1000px;
-      display: flex;
-      justify-content: space-between;
-    }
-    .phone {
-      display: flex;
-      flex-direction: row;
-      justify-content: space-around;
-      width: 100vw;
-      height: auto;
-    }
-    .phone-image {
-      position: absolute;
-      top: 1550px;
-      left: 5%;
-    }
-   
-    .phone-text {
-      width: 380px;
-      height: 220px; 
-    }
-    
-    .images {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      position: relative;
-      height: 1400px;
-      width: 100vw;
-      top: 500px;
-     
-    }
-    .woman-images {
-      width: 100vw; 
-      height: auto;   
-      flex-wrap: wrap;
-      line-height: 0px;
-      font-size: 0;
-      object-fit: fill;
-    }
-    
-    .info {
-      position: relative;
-      top: 600px;
-      left: 10%;
-      width: 820px;
-    }
-    .svg {
-      display: flex;
-      justify-content: center;
-      flex-direction: row;
-      width: 100vw;
-      height: 600px;
-      position: relative;
-      top: 600px;
-    }
-    .background {
-      width: 100vw;
-      height: 520px;
-      background-image: linear-gradient(to right, #0000a3, #0000ff);;
-      clip-path: polygon(100% 5%, 100% 100%, 0% 100%, 0% 15%);
-      position: relative;
-      top: 500px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      flex-direction: column;
-    }
-    .background h2 {
-      width: 800px;
-    }
-    .end-button {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      width: 345px;
-      height: 56px;
-      background-color: #00f3bb;
-    }
-    .end-button:hover {
-      background-image: linear-gradient(to left, #0000fe, #00f0b8);
-      color: white;
-    }
-    figure {
-      width: 340px;
-      padding-left: 50px;
-      display: flex;
-      flex-direction: column;
-    }
-    figcaption {
-      font-family: 'IBMPlexSans-SemiBold', sans-serif;
-      font-size: 28px;
-      color: #060A24;
-      letter-spacing: 0;
-      text-align: center;
-      font-weight: bold;
-      padding: 10px;
-    }
-    footer {
-      background: #ffffff;
-      position: relative;
-      bottom: -500px;
-      width: 100%;
-      height: 90px;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      flex-direction: row;
-    }
-    .icons {
-      width: 650px;
-      height: 30px;
-      display: flex;
-      justify-content: space-evenly
-    }
+  .iframe-container iframe {
+    width: 300px;
   }
-  @media (min-width: 768px) {
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-    body {
-      width: 100vw
-    }
-    html {
-      scroll-behavior: smooth;
-    }
-    .header {
-      background-color: #ffffff;
-      width: 100vw;
-    }
-    .header li {
-      float: left;
-    }
-    .header li a {
-      padding: 15px 20px;
-      background-color: white;
-      color: #060a24;
-    }
-    .header ul a:hover {
-      background: white;
-      color: #00f3bb;
-      text-decoration: line-through;
-    }
-    .header ul a:active {
-      color: #060a2469;
-    }
-    .header .menu {
-      clear: none;
-      float: right;
-      max-height: none;
-    }
-    .header .menu-icon {
-      display: none;
-    }
-    .images {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      position: relative;
-      height: 1400px;
-      width: 100vw;
-      top: 700px;
-     
-    }
-    .woman-images {
-      width: 100vw; 
-      height: auto;   
-      flex-wrap: wrap;
-      line-height: 0px;
-      font-size: 0;
-      object-fit: fill;
-    }
 
+  .woman-images {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
   }
-  @media (min-width: 1024px) {
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-    body {
-      width: 100vw
-    }
-    html {
-      scroll-behavior: smooth;
-    }
-    .header {
-      background-color: #ffffff;
-      width: 100vw;
-    }
-    .header li {
-      float: left;
-    }
-    .header li a {
-      padding: 15px 20px;
-      background-color: white;
-      color: #060a24;
-    }
-    .header ul a:hover {
-      background: white;
-      color: #00f3bb;
-      text-decoration: line-through;
-    }
-    .header ul a:active {
-      color: #060a2469;
-    }
-    .header .menu {
-      clear: none;
-      float: right;
-      max-height: none;
-    }
-    .header .menu-icon {
-      display: none;
-    }
-    .phone {
-      display: flex;
-      flex-direction: row;
-      justify-content: space-around;
-      width: 100vw;
-      height: auto;
-    }
-    
-    .phone-text {
-      margin-left: 500px;
-      width: 380px;
-      height: 220px; 
-    }
-    .images {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      position: relative;
-      height: 1400px;
-      width: 100vw;
-      top: 650px;
-    }
-    .woman-images {
-      width: 100vw; 
-      height: 100vh;   
-      flex-wrap: wrap;
-      line-height: 0px;
-      font-size: 0;
-    }
-    .woman-images img {
-      width: 460px;
-    }
-    .info {
-      position: relative;
-      top: 200px;
-      left: 10%;
-      width: 820px;
-    }
-    .svg {
-      display: flex;
-      justify-content: center;
-      flex-direction: row;
-      width: 100vw;
-      height: 600px;
-      position: relative;
-      top: 140px;
-    }
-    .background {
-      width: 100vw;
-      height: 520px;
-      background-image: linear-gradient(to right, #0000a3, #0000ff);;
-      clip-path: polygon(100% 5%, 100% 100%, 0% 100%, 0% 15%);
-      position: relative;
-      top: 100px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      flex-direction: column;
-    }
-    footer {
-      background: #ffffff;
-      position: relative;
-      bottom: -90px;
-      width: 100%;
-      height: 90px;
-      display: flex;
-      align-items: center;
-      justify-content: space-evenly;
-      flex-direction: column;  
-    }
 
+  .aboutText {
+    width: 80%;
   }
-  @media (min-width: 1440px) {
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-    body {
-      width: 100vw
-    }
-    html {
-      scroll-behavior: smooth;
-    }
-    .header {
-      background-color: #ffffff;
-      width: 100vw;
-    }
-    .header li {
-      float: left;
-    }
-    .header li a {
-      padding: 15px 20px;
-      background-color: white;
-      color: #060a24;
-    }
-    .header ul a:hover {
-      background: white;
-      color: #00f3bb;
-      text-decoration: line-through;
-    }
-    .header ul a:active {
-      color: #060a2469;
-    }
-    .header .menu {
-      clear: none;
-      float: right;
-      max-height: none;
-    }
-    .header .menu-icon {
-      display: none;
-    }
-    .phone {
-      display: flex;
-      flex-direction: row;
-      justify-content: space-around;
-      width: 100vw;
-      height: auto;
-    }
-    
-    .phone-text {
-      margin-left: 500px;
-      width: 380px;
-      height: 220px; 
-    }
-    .images {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      position: relative;
-      height: 1400px;
-      width: 100vw;
-      top: 300px;
-     
-    }
-    .woman-images {
-      width: 100vw; 
-      height: auto;   
-      flex-wrap: wrap;
-      line-height: 0px;
-      font-size: 0;
-    }
-    .info {
-      position: relative;
-      top: 100px;
-      left: 10%;
-      width: 820px;
-    }
-    .svg {
-      display: flex;
-      justify-content: center;
-      flex-direction: row;
-      width: 100vw;
-      height: 600px;
-      position: relative;
-      top: 120px;
-    }
-    .background {
-      width: 100vw;
-      height: 520px;
-      background-image: linear-gradient(to right, #0000a3, #0000ff);;
-      clip-path: polygon(100% 5%, 100% 100%, 0% 100%, 0% 15%);
-      position: relative;
-      top: 100px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      flex-direction: column;
-    }
-    footer {
-      background: #ffffff;
-      position: relative;
-      bottom: -90px;
-      width: 100%;
-      height: 90px;
-      display: flex;
-      align-items: center;
-      justify-content: space-evenly;
-      flex-direction: column;  
-    }
 
+  .informationContainer {
+    height: 850px;
   }
+
+  .svgContainer {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
