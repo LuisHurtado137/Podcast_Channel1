@@ -7,50 +7,59 @@
     <link rel="stylesheet" href="styles.css" />
     <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
     <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
-    <title>PODCAST</title>
+    <title>Pale Blue Dot</title>
   </head>
   <body>
+    <!-- header  -->
     <header class="header">
+
       <img src="images/svg/logo.svg" class="logo" alt="LOGO"></a>
       <input class="menu-button" type="checkbox" id="menu-button" />
       <label class="menu-icon" for="menu-button"><span class="nav-icon"></span></label>
+      
       <ul class="menu paragraph-text">
         <li><a href="#EPISODIOS">EPISODIOS</a></li>
         <li><a href="#NOSOTROS">NOSOTROS</a></li>
         <li><a href="#ENTREVISTAS">ENTREVISTAS</a></li>
         <li><a href="#TÓPICOS">TÓPICOS</a></li>
-      </ul>
+      </ul> 
+
     </header>
-    <section class="text-container">
-      <div class="title-text">
-        <h1>Hello <em>world</em> pale blue dot.</h1>
-      </div>
-      <div class="paragraph-text">
-        <p>El portal de podcasts que explora el mundo de la programación y la tecnología. Nuevos episodios, todos los jueves cada 15 días.</p>
-      </div> 
+    <!-- header  -->
+
+    <section class="homeContainer">
+      <article>
+        <h1 class="title-text">Hello <span>world</span> pale blue dot.</h1>
+        <p class="paragraph-text">El portal de podcasts que explora el mundo de la programación y la tecnología. Nuevos episodios, todos los jueves cada 15 días.</p>
+        <br/>
+        <br/>
+
+        <button class="button btn-style">
+          CONOCÉ MÁS
+        </button> 
+      </article> 
+      
     </section>
-    <section class="btn-container">
-      <div class="button btn-style">
-        <p>CONOCÉ MÁS</p>
-      </div>
+    
+     
+  
+    <section id="EPISODIOS" class="spotify-episodes">
+      <h2 class="subtitle-text">EPISODIOS<h2> 
+      <article class="iframe-container">
+        <iframe src="https://open.spotify.com/embed-podcast/episode/7AZZy2nJ4R9ZndHW0h2yxt" scrolling="no"  frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+        <iframe src="https://open.spotify.com/embed-podcast/episode/1ezdL2ivAGLwSE6Xbssxqt" scrolling="no"  frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+        <iframe src="https://open.spotify.com/embed-podcast/episode/3cWta1iiQSfvrdHaCbLkSD" scrolling="no"  frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+        <iframe src="https://open.spotify.com/embed-podcast/show/2Iibd5A6R7mxkCm4NwNmUn" scrolling="no"  frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe> 
+      </article>  
     </section> 
-    <section class="spotify"id="EPISODIOS">
-      <div class="episodios subtitle-text" >
-         <h2>EPISODIOS<h2>  
-      </div> 
-      <div class="iframe">
-        <iframe  src="https://open.spotify.com/embed-podcast/episode/7AZZy2nJ4R9ZndHW0h2yxt" scrolling="no" width="450px" height="232" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
-        <iframe  src="https://open.spotify.com/embed-podcast/episode/1ezdL2ivAGLwSE6Xbssxqt" scrolling="no" width="450px" height="232" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
-        <iframe  src="https://open.spotify.com/embed-podcast/episode/3cWta1iiQSfvrdHaCbLkSD" scrolling="no" width="450px" height="232" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
-        <iframe  src="https://open.spotify.com/embed-podcast/show/2Iibd5A6R7mxkCm4NwNmUn" scrolling="no" width="450" height="232" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe> 
-      </div>  
-    </section> 
-    <section class="phone">
+
+    <section class="aboutContainer" id="NOSOTROS">
+
       <img class="phone-image" src="images/images/phone.png" alt="phone"/>
          
-       <div class="phone-text paragraph-text">
+       <div class="aboutText paragraph-text">
           
-          <h2 class="phone-title subtitle-text" id="NOSOTROS">De dónde venimos</h2>
+          <h2 class="phone-title subtitle-text" >De dónde<br/> venimos</h2>
           <br>
           <p>Our posturings, our imagined self-importance, the delusion that we have some privileged position in the Universe, are challenged by this point of pale light.
             <br>
@@ -59,44 +68,50 @@
           </p> 
       </div>
     </section>
-    <section class="images subtitle-text">
-      <h2 id="ENTREVISTAS" class="images-title">Invitadas/os estelares</h2>
+
+    <section id="ENTREVISTAS" class="imagesContainer">
+      <h2 class="images-title subtitle-text">Invitadas/os estelares</h2>
       <div class="woman-images">
-        <img src="images/images/grace-hopper.png" width="710" alt="grace-hopper">
-        <img src="images/images/Katie-Bouman.png" width="710" alt="Katie-Bouman">
-        <img src="images/images/Margaret_Hamilton.png" width="710" alt="Margaret_Hamilton">
-        <img src="images/images/An E.R.A.Univac 1103 computer in the 1950s.png" width="710" alt="Computer">
-        <img src="images/images/Computers.png" width="710" alt="computer operato82">
-        <img src="images/images/susan-kare.png" width="710" alt="susan-ka82">
+        <img src="images/images/grace-hopper.png" alt="grace-hopper">
+        <img src="images/images/Katie-Bouman.png" alt="Katie-Bouman">
+        <img src="images/images/Margaret_Hamilton.png" alt="Margaret_Hamilton">
+        <img src="images/images/An E.R.A.Univac 1103 computer in the 1950s.png" alt="Computer">
+        <img src="images/images/Computers.png" alt="computer operato82">
+        <img src="images/images/susan-kare.png" alt="susan-ka82">
       </div> 
     </section>
-    <section class="info subtitle-text" id="TÓPICOS">
-      <h2>Algunos de nuestros temas</h2>
+
+    <section class="informationContainer" id="TÓPICOS">
+      <h2 class="subtitle-text">Algunos de nuestros temas</h2>
+      <div class="svgContainer" >
+          <figure><img src="images/svg/icon1.svg" alt="icono1"> 
+            <figcaption>Trabajo remoto</figcaption>
+          </figure>
+
+          <figure><img src="images/svg/icon2.svg" alt="icono2">  
+            <figcaption>Repensando la <br> programación</figcaption>
+          </figure>
+
+          <figure><img src="images/svg/icon3.svg" alt="icono3"> 
+            <figcaption>Bases del código</figcaption>
+          </figure>
+
+          <figure><img src="images/svg/icon4.svg" alt="icono4">   
+            <figcaption>Seguridad <br> informática</figcaption>
+          </figure> 
+      </div>
     </section> 
-    <section class="svg">
-        <figure><img src="images/svg/icon1.svg" alt="icono1"> 
-        <figcaption>Trabajo remoto</figcaption>
-        </figure>
-        <figure><img src="images/svg/icon2.svg" alt="icono2">  
-        <figcaption>Repensando la <br> programación</figcaption>
-        </figure>
-        <figure><img src="images/svg/icon3.svg" alt="icono3"> 
-        <figcaption>Bases del código</figcaption>
-        </figure>
-        <figure><img src="images/svg/icon4.svg" alt="icono4">   
-        <figcaption>Seguridad <br> informática</figcaption>
-        </figure>    
-    </section> 
+
     <section class="background subtitle-text">
-      <h2>¿Querés las últimas novedades?</h2> 
-      <br>
-      <br>
-        <div class="end-button btn-style">
-          <p>ESCUCHÁ LOS EPISODIOS</p>
-        </div>
+      <h2 class="subtitle-text">¿Querés las últimas novedades?</h2> 
+
+      <button class="button btn-style">
+        <p>ESCUCHÁ LOS EPISODIOS</p>
+      </button>
     </section>
-    <footer class="footer paragraph-text">
-      <p>© 2019— Hello blue pale dot </p>
+
+    <footer class="footer">
+      <p class="paragraph-text"> © 2019— Hello blue pale dot </p>
       <div class="icons" > 
         <a href="https://www.spotify.com/co/"><img src="images/svg/spotify-brands.svg"  alt="spotify"></a>
         <a href="https://www.instagram.com/"><img src="images/svg/instagram-brands.svg" alt="instagram"></a>
@@ -105,5 +120,6 @@
         <a href="https://web.telegram.org/"><img src="images/svg/telegram-brands.svg" alt="telegram"></a>
       </div> 
     </footer>
+
   </body>
 </html>
