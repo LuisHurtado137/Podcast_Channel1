@@ -13,7 +13,7 @@ html {
 
 body {
   font-family: "IBM Plex Sans", sans-serif;
-  overflow-x: hidden;
+  /* overflow-x: hidden; */
   color: #060a24;
 }
 
@@ -289,6 +289,17 @@ figcaption {
     margin: 0;
   }
 
+  .homeContainer article {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .phone-image {
+    width: 100%;
+  }
+
   .title-text {
     font-size: 48px;
     padding: 10px;
@@ -340,6 +351,14 @@ figcaption {
     position: relative;
     float: right;
     cursor: pointer;
+  }
+
+  .button {
+    width: 300px;
+  }
+
+  .icons {
+    width: 100%;
   }
 
   .header .menu-icon {
