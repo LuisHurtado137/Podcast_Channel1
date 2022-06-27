@@ -284,6 +284,21 @@ figcaption {
     grid-template-rows: repeat(4, 1fr);
   }
 
+  .homeContainer {
+    height: 100%;
+    margin: 0;
+  }
+
+  .title-text {
+    font-size: 48px;
+    padding: 10px;
+  }
+
+  .paragraph-text {
+    font-size: 20px;
+    padding: 10px;
+  }
+
   .iframe-container iframe {
     width: 420px;
   }
@@ -321,7 +336,7 @@ figcaption {
   }
 
   .menu-icon {
-    padding: 20px 20px;
+    padding: 20px 10px;
     position: relative;
     float: right;
     cursor: pointer;
